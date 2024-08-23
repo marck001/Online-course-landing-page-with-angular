@@ -1,0 +1,148 @@
+
+.row {
+    flex-wrap: wrap;
+}
+
+.row2 {
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.row2 .content {
+    display: flex;
+}
+
+.row2 .icons {
+    margin: 20px;
+    display: flex;
+}
+
+.row2 .icons a:hover {
+    background-color: #52525e;
+    color: aliceblue;
+}
+
+.landing-section .container {
+    padding: 40px 0px 0px;
+}
+
+
+.landing-info {
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+}
+
+.landing-info .main-info {
+    font-size: 2.2em;
+    margin: 10px;
+}
+
+.box-row{
+    display: flex;
+}
+.main-info input {
+    margin: 10px 0px;
+    border-radius: 8px;
+    background-color: var(--border-color);
+}
+
+.main-info .info {
+    font-size: 0.5em;
+    gap: 25px;
+    margin: 20px;
+}
+
+.main-info .info p {
+    background-color: var(--animation-color);
+    padding: 10px 20px;
+    border-radius: 18px;
+    border: solid white 1px;
+    cursor: pointer;
+}
+
+.main-info .info p:hover {
+
+    background: -moz-linear-gradient(left, #686966 0%, var(--animation-color2)/* #39C7CB */0%, var(--animation-color3)/*#74ecde */100%);
+    background: -webkit-linear-gradient(left, #484b45 0%, var(--animation-color2)/* #39C7CB */0%, var(--animation-color3)/* #74ecde */100%);
+    background: linear-gradient(to right, #424241 0%, var(--animation-color2) /* #39C7CB*/ 0%, var(--animation-color3)/* #74ecde */100%);
+    transition: background-color 0.9s ease;
+    font-weight: 500;
+
+
+}
+
+
+
+.main-info .info,
+.landing-info {
+    display: flex;
+    justify-content: center;
+
+}
+
+.info {
+    margin: 10px;
+}
+
+.landing-info .contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--main-padding);
+}
+
+
+.course-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.course-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.course-section .container .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.subscription-section .container {
+
+
+    padding: 20px;
+}
+
+.form-section {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.form-section .form-container {
+    display: flex;
+}
+
+.form-info .container form {
+    display: flex;
+    align-items: center;
+}
+
+.main-header,
+.header-content,
+.nav,
+.row,
+.row2 .content,
+
+.course-content {
+    display: flex;
+}

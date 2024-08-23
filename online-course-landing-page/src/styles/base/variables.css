@@ -1,0 +1,35 @@
+
+
+:root {
+    --main-padding: 20px;
+    --header-font: "Gabarito", sans-serif;
+    --primary-font: "Titillium Web", sans-serif;
+    --brand-font: "Seymour One", sans-serif;
+    --footer-font: "Jost", sans-serif;
+    --course-font: "Lato", sans-serif;
+    --box-font:"Oswald", sans-serif;
+    --subscriptions-font:"Belgrano", serif;
+    --label-color: #ecebeb;
+    --bkg-color: #f1f1f1;
+    --text-color:#4e4e4e;
+    --main-bg:#F2F2F2;
+    --primary-color: #3a3a3a; 
+    --secondary-color: #81e7e7 ; 
+    --success-color: #54f379; 
+    --star-color:#e6ca2f;
+    --warning-color: #54e9df; 
+    --info-color: #32b2c5; 
+    --slider-color: #f0f0f0; 
+    --github-color:aliceblue;
+    --dark-color: #030303; 
+    --secondary-text-color: #6c757d; 
+    --disabled-text-color: #6c757d; 
+    --border-color: #dee2e6; 
+    --course-color: #ffffff; 
+    --animation-color: #24C6DC ;
+    --animation-color2:#2CC8D8;
+    --animation-color3:#F3F3F3 ;
+    --toggle-color:#030303;
+    --form-color:#70e4da;
+    --form-content-color:var(--bkg-color);
+}

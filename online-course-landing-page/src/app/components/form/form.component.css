@@ -1,0 +1,110 @@
+.form {
+    display: block;
+    font-size: 1.3em;
+    background-color: var(--form-color);
+    padding: var(--main-padding);
+    padding: 1% 5%;
+    color: aliceblue;
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+.form h3 {
+    font-size: 2.2em;
+    padding: var(--main-padding);
+}
+
+.field input {
+    background-color: var(--form-content-color);
+    padding: 5px 20px;
+    font-size: 1.1em;
+    margin: 5px;
+    border-radius: 0.25rem;
+    color: var(--toggle-color);
+}
+
+.form button {
+    background-color: var(--warning-color);
+    padding: 10px 20px;
+    font-size: 22px;
+    justify-content: center;
+    border-radius: 10px;
+    color: azure;
+}
+
+.form-row {
+    margin: 25px;
+}
+
+.field {
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.field label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-section .form-info {
+    padding: 10% 5%;
+    font-size: 2.0em;
+    text-align: center;
+}
+
+.field select,
+.field textarea {
+    background-color: var(--form-content-color);
+    color: var(--toggle-color);
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    padding: var(--main-padding);
+    border-radius: 10px;
+}
+
+.form-info .container {
+    margin: var(--main-padding);
+    display: block;
+    background-color: var(--label-color);
+    padding: var(--main-padding);
+    border-radius: 10px;
+    color: var(--text-color);
+
+}
+
+.form-info {
+    background-color: var(--github-color);
+    color: var(--toggle-color);
+}
+
+.form-info .container p {
+    margin: 1rem 0;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.form-info h4 {
+    font-size: 1.4em;
+    font-family: var(--primary-font);
+
+    text-decoration: underline dotted rgb(131, 131, 131);
+}
+
+.form-info .container form input {
+    padding: 0.74rem;
+    border-radius: 0.25rem;
+    outline: none;
+    border: 1px solid #94949c;
+    background: transparent;
+    color: #94949c;
+    font-weight: 300;
+}

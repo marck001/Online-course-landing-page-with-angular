@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'styles/base/normalize.css';
+@import 'styles/base/variables.css';
+@import 'styles/utilities/dark-styles.css';
+@import 'styles/layout/grid.css';
+@import 'styles/components/button.css';
+@import 'styles/components/nav.css';
+@import 'styles/components/dropdown.css';
+@import 'styles/utilities/colors.css';
+@import 'styles/utilities/media-queries.css';
+@import 'styles/animation/bubble-animation.css';

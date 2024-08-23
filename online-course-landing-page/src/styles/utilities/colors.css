@@ -1,0 +1,30 @@
+body {
+    background-color: var(--bkg-color);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+.bg-light {
+    background-color: rgb(236, 242, 247);
+}
+
+.text-primary {
+    color: #4e4e4e;
+}
+
+.course-section{
+    background-color: var(--main-bg);
+}
+
+.contents {
+    background: var(--animation-color);
+    background: -moz-linear-gradient(top,  var(--animation-color) 0%, var(--animation-color2) 41%,  var(--animation-color3) 100%);
+    background: -webkit-linear-gradient(top, var(--animation-color) 0%,  var(--animation-color2) 41%,  var(--animation-color3) 100%);
+    background: linear-gradient(to bottom, var(--animation-color) 0%, var(--animation-color2) 41%,  var(--animation-color3) 100%);
+}
+
+.wrapper { 
+    background: var(--animation-color); 
+    background: -webkit-linear-gradient(to bottom,var(--animation-color) , #514A9D);  
+    background: linear-gradient(to bottom,var(--animation-color), #514A9D); 
+}

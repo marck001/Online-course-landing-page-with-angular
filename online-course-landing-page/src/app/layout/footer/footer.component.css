@@ -1,0 +1,103 @@
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--footer-font);
+    background-color: var(--main-bg);
+}
+
+.footer-content {
+    display: flex;
+    gap: 12%;
+    font-size: 1.2em;
+}
+
+.footer-box,
+.footer-content {
+    padding: 20px;
+}
+
+.footer-content .row {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--form-content-color);
+    border-radius: 3px;
+    color: var(--text-color);
+}
+
+.footer-content .row h3 {
+    color: var(--info-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-content .row h3:hover {
+
+    border-bottom: solid rgb(161, 161, 236) 1px;
+    border-width: 3px;
+    transition: all 0.2s;
+
+}
+
+.footer-text {
+    list-style: none;
+
+}
+
+.footer-text li {
+    margin: 10px 5px;
+    cursor: pointer;
+    
+}
+
+.footer-text li:hover{
+
+    color: var(--toggle-color);
+   
+}
+
+.footer-box .socials {
+    margin-top: 20px;
+}
+
+.aux-box {
+    padding: 40px;
+    background-color: var(--border-color);
+}
+
+.aux-box .socials {
+    color: var(--primary-color);
+    float: right;
+}
+
+.copyright-box {
+    padding: 10px;
+    background-color:var(--label-color);
+    text-align: center;
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.copyright-box i{
+    color: var(--primary-color);
+}
+.socials {
+    font-size: 25px;
+    letter-spacing: 3px;
+
+}
+
+.socials a {
+    padding: 8px;
+    color: var(--primary-color);
+
+}
+
+.socials a:hover {
+    background-color: rgba(212, 228, 228, 0.9);
+    color: black;
+    border-radius: 50%;
+    transition: background-color 0.6s;
+    border: solid rgb(255, 255, 255) 1px;
+}

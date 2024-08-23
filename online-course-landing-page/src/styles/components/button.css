@@ -1,0 +1,67 @@
+button {
+    cursor: pointer;
+}
+
+.row2 button {
+    margin: 5px;
+    padding: 10px 20px;
+    color: #52525e;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--course-font);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.row2 button:hover {
+    background-color: rgba(76, 197, 197, 0.6);
+    color: azure;
+    transition: background-color 0.5s ease;
+}
+
+.row-info button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--info-color);
+    color: rgb(250, 245, 245);
+
+}
+
+.explore button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--border-color);
+    color: var(--primary-color);
+    border: none;
+    font-family: var(--course-font);
+}
+
+.explore button:hover {
+    background-color: var(--success-color);
+    font-weight: 500;
+    transition: background-color 0.6s ease;
+}
+
+.form-info .container form button,
+.form button {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    outline: none;
+    margin-left: 0.5rem;
+    border: 1px solid var(--warning-color);
+    background-color: var(--warning-color);
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+    font-weight: 400;
+}
+
+.form-info .container form button:hover {
+    background: transparent;
+    color: #14c8aa;
+}
+
+.form button:hover {
+    transform: scale(1.02);
+    border: #eff1ef solid 2px;
+}

@@ -1,0 +1,37 @@
+
+@media (prefers-color-scheme: dark) {
+
+    .sub-header {
+        border: 1px solid rgb(214, 212, 211);
+    }
+
+    body.dark-theme img {
+        filter: brightness(.8) contrast(1.2);
+    }
+
+    body.dark-theme {
+        --bkg-color: #121212;
+        --text-color: #dbdbdb;
+        --main-bg: #222222;
+        --secondary-text-color: #b0b0b0;
+        --disabled-text-color: #757575;
+        --primary-color: #efeef0;
+        --secondary-color: #6c757d;
+        --success-color: #4caf50;
+        --star-color:#c5c94f;
+        --warning-color: #14c8aa;
+        --info-color: #398ccf;
+        --border-color: #373737;
+        --label-color: #353535;
+        --animation-color: #202020;
+        --animation-color2: #333333;
+        --animation-color3: #646464;
+        --slider-color: #272727;
+        --course-color: #333333;
+        --toggle-color: #ffffff;
+        --github-color:#0b0f13;
+        --form-color:#15222c;
+        --form-content-color:#292929;
+    }
+
+}
