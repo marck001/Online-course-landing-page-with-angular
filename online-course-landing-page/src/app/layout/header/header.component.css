@@ -1,3 +1,6 @@
+@import '../../../styles/utilities/media-queries.css';
+
+
 .main-header {
     font-family: var(--header-font);
     font-size: 1.1em;
@@ -54,4 +57,104 @@
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 5px;
     border: solid 1px rgb(143, 140, 140);
+}
+
+
+.nav {
+    margin: 10px;
+    gap: 12%;
+    list-style-type: none;
+  
+}
+
+.nav a {
+    display: flex;
+    margin-right: 3px;
+    gap: 5px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  
+.icons a {
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color:var(--secondary-text-color);
+    font-weight: 500;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    z-index: 2;
+    margin: 3px;
+    background-color: var(--border-color);
+    padding: 5px 0px;
+    box-shadow: 1px 1px 1px var(--info-color);
+    box-shadow: inset 0px 4px 0px 0px blue;
+    color: var(--text-color);
+    
+}
+
+.dropdown-content a {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.8s ease;
+}
+
+.dropdown a:hover {
+    color: var(--info-color);
+    border-radius: 3px;
+
+   
+}
+
+.dropdown i:hover{
+    transform: rotate(-180deg);
+    transition: all 0.5s ease;
+    
+}
+.dropdown p:hover {
+    box-shadow: 0px 0px 1px 0px rgb(77, 76, 76);
+    background-color: rgba(173, 173, 175, 0.3);
+    transition: all 0.5s ease;
+
+}
+
+.visible{
+    display: block;
+}
+
+.active .dropdown {
+    display: block;
+}
+
+
+.dropdown-content-active{
+    color: var(--toggle-color);
+ 
+
+   
+}
+
+.dropdown-content-active .dropdown-content {
+    display: block;
 }

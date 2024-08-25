@@ -7,20 +7,20 @@ import { CourseComponent } from './components/course/course.component';
 import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
-
+import { AboutComponent } from './pages/about/about.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,  HeaderComponent, CardComponent, CourseComponent, FormComponent, FooterComponent, SubscriptionComponent,  ContactsComponent ],
+  imports: [RouterOutlet,  HeaderComponent, CardComponent, CourseComponent,
+     FormComponent, FooterComponent, SubscriptionComponent, 
+      ContactsComponent, AboutComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'online-course-landing-page';
 
-  ngOnInit() {
-    
-  }
+
 }

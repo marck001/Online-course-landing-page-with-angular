@@ -1,0 +1,100 @@
+.about {
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    color: #c0c0c4;
+    gap: 10%;
+    background-color: var(--github-color);
+  }
+  
+  .layout-profile {
+    box-shadow: 0 1px 1px 0 rgba(31, 30, 30, 0.2);
+    display: block;
+    padding: 20px 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bkg-color);
+    color: var(--text-color);
+  
+  }
+  
+  .layout-main {
+  
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .information-box,
+  .skills,
+  .projects,
+  .socials {
+    box-shadow: 0 1px 1px 0 rgba(252, 252, 252, 0.3);
+    box-shadow: 1px 0 0 1px rgba(252, 252, 252, 0.3);
+    padding: 20px;
+    float: left;
+    border-radius: 3px;
+    background-color: var(--bkg-color);
+    color: var(--text-color);
+  
+  }
+  
+  .container {
+    padding: 0 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .avatar {
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+  
+  .socials-btn {
+    display: flex;
+    gap: 10%;
+    margin: 10px;
+    justify-content: center;
+    
+  }
+  
+  .socials-btn a {
+    border-radius: 4px;
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+  
+  }
+  
+  .socials-btn a:hover{
+    transform:translateY(2px);
+    background-color: #dddddd;
+  }
+  
+  .discord-server{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+  }
+  
+  .discord-server a{
+    border: 1px solid black;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color:dodgerblue;
+    border-radius: 4px;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .about{
+        display: block;
+    }
+
+}

@@ -1,4 +1,4 @@
-
+/*
 .nav {
     margin: 10px;
     gap: 12%;
@@ -21,3 +21,9 @@
     z-index: 3;
   }
   
+.icons a {
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+}
+*/
