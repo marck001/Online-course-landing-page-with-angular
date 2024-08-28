@@ -1,0 +1,46 @@
+.tutorials-section {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-item iframe {
+
+
+    width: 360px;
+    height: 215px;
+    border-radius: 8px;
+   
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--toggle-color);
+
+}
+
+.explore p{
+    color: var(--text-color);
+    margin: 10px;
+}

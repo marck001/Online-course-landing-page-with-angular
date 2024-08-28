@@ -9,24 +9,24 @@ function currentTheme() {
 
     document.body.classList.add("dark-theme");
     console.log("dark")
-    logoImg.src = "src/assets/img/logo/full-logo-dark-style.png";
-    fullLogo.src ="src/assets/img/logo/full-logo-dark-style.png";
+    logoImg.src = "/assets/img/logo/full-logo-dark-style.png";
+    fullLogo.src ="/assets/img/logo/full-logo-dark-style.png";
 
     
 
   } else if (currentTheme === "light") {
     document.body.classList.add("light-theme");
     console.log("light")
-    logoImg.src = "src/assets/img/logo/logo-light1.png";
-    fullLogo.src ="src/assets/img/logo/full-logo-light-style.png";
+    logoImg.src = "/assets/img/logo/logo-light1.png";
+    fullLogo.src ="/assets/img/logo/full-logo-light-style.png";
 
 
 
   } else if (prefersDarkScheme.matches) {
     document.body.classList.add("dark-theme");
     console.log("dark1")
-    logoImg.src = "src/assets/img/logo/logo-dark-style.png";
-    fullLogo.src ="src/assets/img/logo/full-logo-dark-style.png";
+    logoImg.src = "/assets/img/logo/logo-dark-style.png";
+    fullLogo.src ="/assets/img/logo/full-logo-dark-style.png";
   }
 }
 
@@ -48,6 +48,6 @@ btn.addEventListener("click", function () {
   var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
   localStorage.setItem("theme", theme);
   console.log(theme);
-  logoImg.src = theme === "dark" ? "src/assets/img/logo/logo-dark-style.png" : "src/assets/img/logo/logo-light1.png";
-  fullLogo.src = theme === "dark" ? "src/assets/img/logo/full-logo-dark-style.png" : "src/assets/img/logo/full-logo-light-style.png";
+  logoImg.src = theme === "dark" ? "/assets/img/logo/logo-dark-style.png" : "/assets/img/logo/logo-light1.png";
+  fullLogo.src = theme === "dark" ? "/assets/img/logo/full-logo-dark-style.png" : "/assets/img/logo/full-logo-light-style.png";
 });

@@ -1,5 +1,11 @@
 <app-header></app-header>
 
-<router-outlet><router-outlet />
 
-    <app-footer></app-footer>
+<div [@routeTransition]="currentRouteData" style="display: contents">
+
+    <router-outlet></router-outlet>
+        <router-outlet name="name1"></router-outlet>
+
+</div>
+
+<app-footer></app-footer>

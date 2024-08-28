@@ -1,3 +1,5 @@
+
+
 .course-content {
     display: grid;
     margin: 30px 20px;
@@ -104,4 +106,28 @@
 	width: 1000%;
 	height: 100%;
 	transition: all .5s;
+}
+
+.explore {
+    display: flex;
+    justify-content: space-between;
+    color: var(--info-color);
+    margin-top: 20px;
+}
+
+.explore p {
+    background: var(--main-bg);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1250px){
+
+    .slider-container {
+        width: 370px;
+
+    }
+
+
 }

@@ -11,17 +11,18 @@ document.querySelectorAll('.slider-container').forEach(container => {
     let slidesCount = slides - slidesPerPage;
     let containerWidth = container.offsetWidth;
 
+    
     function checkWidth() {
         containerWidth = container.offsetWidth;
         setParams(containerWidth);
     }
 
     function setParams(w) {
-        if (w < 451) {
+        if (w < 851) {
             slidesPerPage = 1;
         } else if (w < 901) {
             slidesPerPage = 2;
-        } else if (w < 1520) {
+        } else if (w < 1220) {
             slidesPerPage = 3;
         } else {
             slidesPerPage = 4;

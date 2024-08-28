@@ -65,3 +65,10 @@ button {
     transform: scale(1.02);
     border: #eff1ef solid 2px;
 }
+
+.rating i {
+    display: inline;
+    padding: 5px;
+    color: var(--star-color);
+
+}

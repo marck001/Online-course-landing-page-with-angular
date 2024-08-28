@@ -4,6 +4,7 @@ import { SubscriptionComponent } from '../components/subscription/subscription.c
 import { CardComponent } from '../components/card/card.component';
 import { CourseComponent } from '../components/course/course.component';
 import { FormComponent } from '../components/form/form.component';
+
 //import { FooterComponent } from '../layout/footer/footer.component';
 @Component({
   selector: 'app-home',

@@ -1,0 +1,266 @@
+
+.course-block:hover {
+  text-decoration: none;
+  background-image: linear-gradient(0deg,
+      var(--animation-color2),
+      var(--animation-color3));
+}
+
+.course-block .course-image {
+  width: 70px;
+  opacity: 0.5;
+}
+
+.course-block .course-name {
+  margin-top: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.course-block:hover .course-name {
+  color: #ffffff;
+}
+
+
+/*****************/
+
+
+.explore-btn {
+    background-color: #ffffff;
+    color: var(--success-color);
+    padding: 6px 24px;
+    font-weight: 600;
+    font-size: 14px;
+
+  }
+  .new-course-image {
+    background-color: var(--label-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 160px;
+  }
+  .explore-courses-btn {
+    border: 2px solid var(--success-color);
+    color: var(--success-color);
+  }
+  
+  .online-courses-btn {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
+    
+
+/* General styles */
+.section-bg {
+  background-color: var(--github-color);
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+  color: var(--toggle-color);
+}
+
+.font-weight-bolder {
+  font-weight: bolder;
+}
+
+.text-muted {
+  color: var(--primary-color);
+}
+
+.my-3 {
+  margin: 1rem 0;
+}
+
+
+
+.course-block {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  outline: 1px solid var(--toggle-color);
+  transition: all 0.3s ease-in-out;
+  gap: 20px;
+  background-color: var(--course-color);
+}
+
+.course-block:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px var(--toggle-color);
+  opacity: 1;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course-name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.sectionTwo-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.sectionTwo-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.course-block-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:10px;
+}
+
+.sectionThree-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+  background-color: #0056b3;
+}
+
+.sectionThree-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.sectionThree-courseCard {
+  padding: 20px;
+  background-color: var(--label-color);
+  box-shadow: 0 1px 2px var(--toggle-color);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  color: var(--text-color);
+
+}
+
+.new-course-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+}
+
+.sectionThree-courseCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.text-light-green-color {
+  color: var(--success-color);
+}
+
+.text-secondary-color {
+  color: #6c757d;
+}
+
+.button-container {
+  margin-top: 1.5rem; 
+  margin-bottom: 3rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.explore-courses-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px; 
+  background-color: var(--github-color); 
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-courses-btn:hover {
+  background-color: var(--animation-color3); 
+ 
+}
+
+@media (min-width: 768px) {
+  .col-md-10 {
+    width: 83.3333%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .offset-md-1 {
+    margin-left: 8.3333%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .col-md-7 {
+    width: 58.3333%;
+  }
+
+  .col-md-5 {
+    width: 41.6667%;
+  }
+
+  .col-md-8 {
+    width: 66.6667%;
+  }
+
+  .col-md-4 {
+    width: 33.3333%;
+  }
+
+ 
+}

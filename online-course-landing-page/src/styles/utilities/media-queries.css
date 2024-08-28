@@ -67,6 +67,9 @@
         flex: 1;
         max-width: 100%;
     }
+    .course-block-row{
+        flex-direction: column;
+      }
 
 }
 

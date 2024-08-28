@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject, PLATFORM_ID, ElementRef, Renderer2, } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
+import { LogoService } from '../../services/logo.service';
 
 @Component({
   selector: 'app-header',
@@ -19,34 +20,49 @@ export class HeaderComponent implements OnInit {
   constructor(
     private elRef: ElementRef,
     private renderer: Renderer2,
-    @Inject(PLATFORM_ID) private platformId: any
+    @Inject(PLATFORM_ID) private platformId: any,
+    private logoService: LogoService
 
   ) {
 
   }
 
+  getElref():ElementRef{
+    return this.elRef;
+  }
+
+  getRenderer():Renderer2{
+    return this.renderer;
+  }
+  
+
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      const navbar = this.elRef.nativeElement.querySelector('#navbar');
+      const navbar =  this.getElref().nativeElement.querySelector('#navbar');
+      if(navbar){
       this.sticky = navbar.offsetTop;
-      this.renderer.listen('window', 'scroll', () => this.onScroll(navbar));
+      this.getRenderer().listen('window', 'scroll', () => this.onScroll(navbar));
+      }
 
-      this.toggle = this.elRef.nativeElement.querySelector('#menu-icon');
-      this.menu = this.elRef.nativeElement.querySelector('.header-content');
-      this.row2 = this.elRef.nativeElement.querySelector('.hidden');
-      this.items = this.elRef.nativeElement.querySelectorAll('.dropdown');
+      this.toggle =  this.getElref().nativeElement.querySelector('#menu-icon');
+      this.menu = this.getElref().nativeElement.querySelector('.header-content');
+      this.row2 = this.getElref().nativeElement.querySelector('.hidden');
+      this.items = this.getElref().nativeElement.querySelectorAll('.dropdown');
+      const logoImg = this.elRef.nativeElement.querySelector('#logo-img') as HTMLImageElement;
+
+      this.logoService.setHeaderLogo(logoImg)
 
       if (this.toggle) {
-        this.renderer.listen(this.toggle, 'click', () => this.toggleNavMenu());
+        this.getRenderer().listen(this.toggle, 'click', () => this.toggleNavMenu());
       }
 
       if (this.items) {
         this.items.forEach(item => {
-          this.renderer.listen(item, 'click', (event) => this.toggleItem(event, item));
+          this.getRenderer().listen(item, 'click', (event) => this.toggleItem(event, item));
         });
       }
 
-      this.renderer.listen('document', 'click', (event) => this.closeDropDown(event));
+      this.getRenderer().listen('document', 'click', (event) => this.closeDropDown(event));
     }
   }
 
@@ -54,11 +70,12 @@ export class HeaderComponent implements OnInit {
   onScroll(navbar: HTMLElement): void {
     if (window.scrollY >= this.sticky) {
 
-      this.renderer.addClass(navbar, 'sticky');
+      this.getRenderer().addClass(navbar, 'sticky');
     } else {
 
-      this.renderer.removeClass(navbar, 'sticky');
+      this.getRenderer().removeClass(navbar, 'sticky');
     }
+    
   }
 
   toggleNavMenu(): void {
@@ -66,13 +83,13 @@ export class HeaderComponent implements OnInit {
       const isActive = this.menu.classList.contains('active') && this.row2.classList.contains('active');
 
       if (isActive) {
-        this.renderer.removeClass(this.menu, 'active');
-        this.renderer.removeClass(this.row2, 'active');
-        this.renderer.setProperty(this.toggle, 'innerHTML', "<i class='fa-solid fa-bars'></i>");
+        this.getRenderer().removeClass(this.menu, 'active');
+        this.getRenderer().removeClass(this.row2, 'active');
+        this.getRenderer().setProperty(this.toggle, 'innerHTML', "<i class='fa-solid fa-bars'></i>");
       } else {
-        this.renderer.addClass(this.menu, 'active');
-        this.renderer.addClass(this.row2, 'active');
-        this.renderer.setProperty(this.toggle, 'innerHTML', "<i class='fa-solid fa-times'></i>");
+        this.getRenderer().addClass(this.menu, 'active');
+        this.getRenderer().addClass(this.row2, 'active');
+        this.getRenderer().setProperty(this.toggle, 'innerHTML', "<i class='fa-solid fa-times'></i>");
       }
     }
   }
@@ -83,12 +100,12 @@ export class HeaderComponent implements OnInit {
     if (this.items) {
       this.items.forEach(dropdown => {
         if (dropdown !== item) {
-          this.renderer.removeClass(dropdown, 'dropdown-content-active');
+          this.getRenderer().removeClass(dropdown, 'dropdown-content-active');
         }
       });
     }
 
-    this.renderer.addClass(item, 'dropdown-content-active');
+    this.getRenderer().addClass(item, 'dropdown-content-active');
   }
 
   closeDropDown(event: Event): void {
@@ -97,12 +114,10 @@ export class HeaderComponent implements OnInit {
     if (!target.closest('.dropdown-content') && !target.closest('.dropdown')) {
       if (this.items) {
         this.items.forEach(item => {
-          this.renderer.removeClass(item, 'dropdown-content-active');
+          this.getRenderer().removeClass(item, 'dropdown-content-active');
         });
       }
     }
   }
-
-
 
 }
