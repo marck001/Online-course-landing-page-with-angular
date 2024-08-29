@@ -153,9 +153,6 @@
   cursor: pointer;
 }
 
-/*
-  ANIMATION
-----------------*/
 
 .open-chat-animation {
   animation: grow-circle 0.5s forwards ease-out;
@@ -179,12 +176,6 @@
       clip-path: circle(0% at 100% 100%);
   }
 }
-
-
-
-
-
-
 
 ul {
   display: flex;
