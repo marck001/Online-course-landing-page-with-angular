@@ -55,6 +55,10 @@
     margin: 10px 0px;
     border-radius: 5px;
   }
+
+  .container h4{
+    color: var(--secondary-text-color);
+  }
   
   li{
     color: var(--secondary-text-color);
@@ -92,6 +96,7 @@
   .socials-btn a:hover{
     transform:translateY(2px);
     background-color: #dddddd;
+    color: black;
   }
   
   .discord-server{
@@ -108,6 +113,12 @@
     cursor: pointer;
     background-color:dodgerblue;
     border-radius: 4px;
+  }
+
+  .discord-server a:hover{
+  
+    background-color:rgb(12, 117, 221);
+   
   }
   
   @media screen and (max-width: 600px) {

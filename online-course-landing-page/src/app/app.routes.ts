@@ -12,7 +12,7 @@ import { WebCourseComponent } from './pages/courses/web-course/web-course.compon
 import { NetworkingComponent } from './pages/courses/networking/networking.component';
 import { FrontendCourseComponent } from './pages/courses/frontend-course/frontend-course.component';
 import { BackendCourseComponent } from './pages/courses/backend-course/backend-course.component';
-
+import { MachineComponent } from './pages/courses/machine/machine.component';
 
 export const routes: Routes = [
     {
@@ -57,12 +57,26 @@ export const routes: Routes = [
     },
 
     {
+        path: "courses/machine-learning",
+        component:MachineComponent,
+
+    },
+    {
         path: "tutorials",
         component: TutorialsComponent,
     },
 
     {
         path: "tutorials/javascript",
+        component: TutorialsComponent,
+    },
+
+    {
+        path: "tutorials/linux",
+        component: TutorialsComponent,
+    },
+    {
+        path: "tutorials/java",
         component: TutorialsComponent,
     },
 

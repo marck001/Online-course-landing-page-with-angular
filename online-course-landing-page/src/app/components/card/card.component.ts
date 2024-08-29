@@ -34,6 +34,8 @@ export class CardComponent implements AfterViewInit {
     { name: 'Data Science', route: 'courses/python' },
     { name: 'Front-end Development', route: 'courses/front-end' },
     { name: 'Networking', route: 'courses/networking'},
+    { name: 'Javascript tutorial', route: 'tutorials/javascript'},
+    { name: 'Linux tutorial', route: 'tutorials/linux'},
   ];
 
 

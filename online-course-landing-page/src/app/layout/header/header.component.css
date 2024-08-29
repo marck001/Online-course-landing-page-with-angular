@@ -31,6 +31,7 @@
 .sub-header a {
     padding: 5px;
     cursor: pointer;
+    color: aliceblue;
 }
 
 .sub-header a:hover {
@@ -86,6 +87,8 @@
     padding: 8px;
     border-radius: 5px;
     margin: 5px;
+    
+  
 }
 
 
@@ -113,6 +116,7 @@
 
 .dropdown-content a {
     padding: 10px;
+
    
 }
 
