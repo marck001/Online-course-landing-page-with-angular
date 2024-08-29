@@ -12,12 +12,11 @@
                 <ul class="nav">
                     <li class="item dropdown"><a routerLink="/courses">Courses<i class="fa-solid fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <p><a>Javascript</a></p>
-                            <p><a routerLink="/courses/python">Python</a></p>
-                            <p><a>Java</a></p>
-                            <p><a>C#</a></p>
-                            <p><a>C++</a></p>
-                            <p><a>C</a></p>
+                            <p><a routerLink="/courses/full-stack">Full stack</a></p>
+                            <p><a routerLink="/courses/python">Data science Python</a></p>
+                            <p><a routerLink="/courses/back-end">Backend</a></p>
+                            <p><a routerLink="/courses/front-end">Front-end</a></p>
+                            <p><a routerLink="/courses/networking">Networking</a></p>
                         </div>
                     </li>
                     <li class="item dropdown"><a  routerLink="/tutorials">Tutorials<i class="fa-solid fa-chevron-down"></i></a>
@@ -33,7 +32,7 @@
                         <div class="dropdown-content">
                             <p><a routerLink="/courses">Courses</a></p>
                             <p><a routerLink="/contacts">Contact</a></p>
-                            <p><a routerLink="/about" >About-us</a></p>
+                            <p><a routerLink="/about" >About-me</a></p>
                         </div>
                     </li>
                     <li class="item dropdown"><a>Ai<i class="fa-solid fa-chevron-down"></i></a>
@@ -43,11 +42,11 @@
                             <p><a>Ai algorithms</a></p>
                         </div>
                     </li>
-                    <li class="item dropdown"><a>Pricing<i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="item dropdown"><a>Register<i class="fa-solid fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <p><a>Course prices</a></p>
+                            <p><a routerLink="/form">Login/Sign-up</a></p>
                             <p><a>Plans</a></p>
-                            <p><a>Subscription</a></p>
+                            <p><a routerLink="/subscription">Subscription</a></p>
                         </div>
                     </li>
                 </ul>
@@ -62,7 +61,7 @@
                     <a><i class="fa-solid fa-circle-half-stroke" id="btn-toggle"></i></a>
                     <a><i class="fas fa-globe"></i></a>
                 </div>
-                <button id="signUp-btn">Sign Up</button>
+                <a id="signUp-btn" routerLink="/form">Sign Up</a>
 
             </div>
         </div>

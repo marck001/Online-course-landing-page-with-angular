@@ -11,13 +11,14 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { AboutComponent } from './pages/about/about.component';
 import { LogoService } from './services/logo.service';
 import { routeTransition } from './route-transition';
-import { provideAnimations } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,  HeaderComponent, CardComponent, CourseComponent,
      FormComponent, FooterComponent, SubscriptionComponent, 
-      ContactsComponent, AboutComponent ],
+      ContactsComponent, AboutComponent , RouterModule],
       animations:[ routeTransition],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -2,19 +2,24 @@ button {
     cursor: pointer;
 }
 
-.row2 button {
+.row2 #signUp-btn {
     margin: 5px;
-    padding: 10px 20px;
+    padding: 20px;
     color: #52525e;
     background-color: aliceblue;
     border: none;
     border-radius: 5px;
     font-family: var(--course-font);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+   
 }
-
-.row2 button:hover {
+a{
+    text-decoration: none;
+}
+.row2 #signUp-btn:hover {
     background-color: rgba(76, 197, 197, 0.6);
     color: azure;
     transition: background-color 0.5s ease;

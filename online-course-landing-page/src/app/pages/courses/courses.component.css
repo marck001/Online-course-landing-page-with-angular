@@ -42,7 +42,7 @@
   }
   .explore-courses-btn {
     border: 2px solid var(--success-color);
-    color: var(--success-color);
+    color: var(--border-color);
   }
   
   .online-courses-btn {
@@ -83,8 +83,6 @@
 .my-3 {
   margin: 1rem 0;
 }
-
-
 
 .course-block {
   text-decoration: none;
@@ -199,6 +197,16 @@
   color: #6c757d;
 }
 
+.row{
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+.col-md-4 {
+
+  margin: 10px;
+
+}
 .button-container {
   margin-top: 1.5rem; 
   margin-bottom: 3rem; 
@@ -218,9 +226,10 @@
   text-decoration: none;
   border-radius: 50px; 
   background-color: var(--github-color); 
-  color: #fff;
+  color: var(--text-color);
   transition: background-color 0.3s ease-in-out;
 }
+
 
 .explore-courses-btn:hover {
   background-color: var(--animation-color3); 

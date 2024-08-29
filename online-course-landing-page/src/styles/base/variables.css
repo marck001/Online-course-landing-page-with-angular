@@ -6,6 +6,7 @@
     --brand-font: "Seymour One", sans-serif;
     --footer-font: "Jost", sans-serif;
     --course-font: "Lato", sans-serif;
+    --section-font: "Lekton", monospace;
     --box-font:"Oswald", sans-serif;
     --subscriptions-font:"Belgrano", serif;
     --label-color: #ecebeb;
@@ -29,6 +30,9 @@
     --animation-color: #24C6DC ;
     --animation-color2:#2CC8D8;
     --animation-color3:#F3F3F3 ;
+    --second-animation-color:#28badf;
+    --second-animation-color2: #548dd8;
+    --second-animation-color3:#8598e2;
     --toggle-color:#030303;
     --form-color:#70e4da;
     --form-content-color:var(--bkg-color);

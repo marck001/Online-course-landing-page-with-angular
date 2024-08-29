@@ -27,18 +27,12 @@
               }
             ],
             "styles": [
-             
               "src/styles.css"
-              
-            
-              
             ],
             "scripts": [
                "src/js/utils/dark-mode.js",
-               "src/js/components/slider-script.js"
-              
-             
-            ],
+              "src/js/components/slider-script.js"
+           ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {

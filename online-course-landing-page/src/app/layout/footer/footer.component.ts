@@ -1,11 +1,11 @@
 import { Component ,OnInit, Inject, PLATFORM_ID, ElementRef, Renderer2,} from '@angular/core';
 import { LogoService } from '../../services/logo.service';
 import { isPlatformBrowser } from '@angular/common';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [ RouterModule ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })

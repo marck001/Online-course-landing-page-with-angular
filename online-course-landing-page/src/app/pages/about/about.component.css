@@ -5,6 +5,7 @@
     color: #c0c0c4;
     gap: 10%;
     background-color: var(--github-color);
+    font-family: var(--primary-font);
   }
   
   .layout-profile {
@@ -40,13 +41,31 @@
   
   }
   
+  .layout-profile h2{
+    font-family: var(--subscriptions-font);
+  }
   .container {
     padding: 0 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: left;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
   }
   
+  li{
+    color: var(--secondary-text-color);
+    margin: 10px;
+    font-family: var(--course-font);
+
+  }
+
+  .projects a{
+    color: var(--secondary-text-color);
+  }
   .avatar {
     vertical-align: middle;
     border-radius: 50%;

@@ -5,8 +5,10 @@
 @import 'styles/utilities/dark-styles.css';
 @import 'styles/layout/grid.css';
 @import 'styles/components/button.css';
-@import 'styles/components/nav.css';
+
 @import 'styles/components/dropdown.css';
 @import 'styles/utilities/colors.css';
 @import 'styles/utilities/media-queries.css';
 @import 'styles/animation/bubble-animation.css';
+
+/*@import 'styles/components/nav.css';*/

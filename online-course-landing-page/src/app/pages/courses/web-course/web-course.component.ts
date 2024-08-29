@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { FaqComponent } from '../../../components/faq/faq.component';
-import { RouterModule } from '@angular/router';
-
 @Component({
-  selector: 'app-python',
+  selector: 'app-web-course',
   standalone: true,
-  imports: [FaqComponent, RouterModule],
-  templateUrl: './python.component.html',
+  imports: [FaqComponent],
+  templateUrl: './web-course.component.html',
   styleUrl: '../general.courses.css'
 })
-export class PythonComponent {
+export class WebCourseComponent {
 
 }

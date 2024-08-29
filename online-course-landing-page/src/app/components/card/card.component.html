@@ -16,16 +16,24 @@
             <div class="landing-info">
                 <div class="main-info">
                     <h3>What do you want to learn today?</h3>
-                    <div class="search-box" placeholder="Search..">
-                        <input type="search">
-                        <a> <i class="fa-solid fa-magnifying-glass" style="font-size: 18px;"></i></a>
+                    <div class="search-box" >
+                        <input #searchInput type="search" placeholder="Search.." class="search" id="search-input">
+                        <button type="submit" #searchButton class="searchButton" id="search-button"><i class="fa-solid fa-magnifying-glass" style="font-size: 18px;"></i></button> 
+
+                        <ul   #searchResults id="search-results" *ngIf="showResults">
+                            <li *ngFor="let course of filteredCourses" (click)="navigateToCourse(course.route)">
+                              {{ course.name }}
+                            </li>
+                        </ul>
+
+
                     </div>
                     <p>Everything you're learning, just here</p>
                     <div class="info">
-                        <p>Full stack</p>
-                        <p>Backend dev</p>
-                        <p>Frontend dev</p>
-                        <p>AI dev</p>
+                        <p><a routerLink="/courses/full-stack">Full stack</a></p>
+                        <p><a routerLink="/courses/back-end">Backend dev</a></p>
+                        <p><a routerLink="/courses/front-end">Frontend dev</a></p>
+                        <p><a routerLink="/courses/networking">Networking dev</a></p>
                     </div>
                 </div>
                 <div class="contents">

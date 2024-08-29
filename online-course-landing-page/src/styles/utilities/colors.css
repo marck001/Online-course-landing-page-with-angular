@@ -28,3 +28,9 @@ body {
     background: -webkit-linear-gradient(to bottom,var(--animation-color) , #514A9D);  
     background: linear-gradient(to bottom,var(--animation-color), #514A9D); 
 }
+
+
+.course-guide{
+    background: var(--second-animation-color);  
+    background: -webkit-linear-gradient(to left, #548dd8, #8598e2); 
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, PLATFORM_ID, ElementRef, Renderer2, HostListener} from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID, ElementRef, Renderer2,  HostListener, OnDestroy} from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
@@ -18,6 +18,8 @@ export class CourseComponent implements OnInit {
   private currentMargin: number = 0;
   private slidesCount: number = 0;
   private containerWidth: number = 0;
+  private leftBtnListener: (() => void) | null = null;
+  private rightBtnListener: (() => void) | null = null;
 
   constructor(
     private elRef: ElementRef,
@@ -33,15 +35,18 @@ export class CourseComponent implements OnInit {
         this.slider = container.querySelector('.slider');
         this.leftBtn = container.querySelector('.left-btn');
         this.rightBtn = container.querySelector('.right-btn');
-        this.slides = container.querySelectorAll('course').length;
+        this.slides = container.getElementsByClassName('course').length;
         this.containerWidth = container.offsetWidth;
         /*
         this.setParams(this.containerWidth);
         
         */
-    
-          this.renderer.listen(this.leftBtn, 'click', () => this.slideLeft());
-          this.renderer.listen(this.rightBtn, 'click', () => this.slideRight());
+        if (this.leftBtn) {
+          this.leftBtnListener = this.renderer.listen(this.leftBtn, 'click', () => this.slideLeft());
+        }
+        if (this.rightBtn) {
+          this.rightBtnListener = this.renderer.listen(this.rightBtn, 'click', () => this.slideRight());
+        }
       });
     }
   }
@@ -49,7 +54,7 @@ export class CourseComponent implements OnInit {
   @HostListener('window:resize')
   onResize() {
     this.containerWidth = this.elRef.nativeElement.querySelector('.slider-container').offsetWidth;
-    this.setParams(this.containerWidth);
+    /*this.setParams(this.containerWidth);*/
     
   }
 
@@ -108,6 +113,16 @@ export class CourseComponent implements OnInit {
         this.renderer.setStyle(this.slider, 'marginLeft', this.currentMargin + '%');
       }
       this.updateButtons();
+    }
+  }
+
+  ngOnDestroy(): void {
+ 
+    if (this.leftBtnListener) {
+      this.leftBtnListener();
+    }
+    if (this.rightBtnListener) {
+      this.rightBtnListener();
     }
   }
 }
