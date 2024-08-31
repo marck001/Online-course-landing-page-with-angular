@@ -21,10 +21,6 @@
   color: #ffffff;
 }
 
-
-/*****************/
-
-
 .explore-btn {
     background-color: #ffffff;
     color: var(--success-color);
@@ -50,8 +46,6 @@
     color: #ffffff;
   }
     
-
-/* General styles */
 .section-bg {
   background-color: var(--github-color);
 }
